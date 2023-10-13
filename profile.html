@@ -1,98 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="whoami.css">
-    <div class="navbar">
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-      </ul>
-    </div>
 </head>
+<header>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </div>
+</header>
+
 <body>
-  <header>
-      <h1>My Personal Website</h1>
-  </header>
-  <div class="container">
-      <h2>Personal stuff about João Deodato</h2>
-      <p>
-          Hi, name is João i'm 24 years old and this year i decided to start my studies in ICT.
-      </p>
-      <p>
-          I'm from Portugal, more specifacilly from Mafra (near Lisbon).
-      </p> 
-      <h2>Interests and Hobbies</h2>
-      <p>
-          When I'm not coding, I enjoy spending my time on various hobbies and interests, including:
-      </p>
-      <ul>
-          <li>Being with friends</li>
-          <li>Playing video games</li> 
-          <li>Playing sports</li>
-          <li>Watching football</li>
-      </ul>
-      <img id="friends" src="images/friends1.jpg" alt="Fun with friends">
-      <img id="friends" src="Images/friends2.jpg" alt="Fun with friends">
-      <h2>Priorities in life</h2>
-      <p>
-          The most important things in my life are:
-      </p>
-      <ul>
-          <li>Mom</li>
-          <li>Sister</li> 
-          <li>Dog (Chica)</li>
-          <li>Friends (Pedro)</li>
-      </ul>
-      <img id="chica" src="Images/Chica.jpg" alt="Cute dog">
-      <h2>Education</h2>
-      <p>
-          I'm currently pursuing a Bachelor's degree in ICT at HZ University. I believe this program will provide me with the knowledge and skills I need to make a meaningful contribution to the tech industry.
-          However i already did a two-year course in managment and accounting.
-      </p>
-      <h2>Jobs</h2>
-      <p>
-          Before coming to the Netherlands i used to be a financial assistant in a company, i also have experience with some car parts (steering box, transmissions, steering pumps...) i also had a office job in two other different companies one related to beds and everything related to it and in a gas company.
-      </p>
-      <fieldset>
-          <legend>Am i an outdoor or indoor person?</legend>
-          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" > Indoor</label>
-          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+    <main>
+        <h1>Profile</h1>
+    </main>
+    <div class="container">
+        <h2>Personal stuff about João Deodato</h2>
+        <p>Hi, name is João i'm 24 years old and this year i decided to start my studies in ICT.</p>
+        <p>I'm from Portugal, more specifacilly from Mafra (near Lisbon).</p>
+        <h2>Interests and Hobbies</h2>
+        <p>When I'm not coding, I enjoy spending my time on various hobbies and interests, including:</p>
+        <div class="image-and-text">
+            <div class="item">
+                <img id="friends" src="images/friends1.jpg" alt="Fun with friends">
+                <p>Being with friends</p>
+            </div>
+            <div class="item">
+                <img id="videogames" src="Images/videogames.jpg" alt="Fun with friends">
+                <p>Playing video games</p>
+            </div>
+            <div class="item">
+                <img id="sports" src="images/sports.jpg" alt="Playing sports">
+                <p>Playing sports</p>
+            </div>
+            <div class="item">
+                <img id="football" src="images/football.jpg" alt="Watching football">
+                <p>Watching football</p>
+            </div>
+        </div>
+        <p>The most important things in my life are:</p>
+        <div class="family">
+            <div class="familyy">
+                <ul>
+                    <li>Mom</li>
+                    <img id="Mom" src="Images/mom.jpg" alt="mom">
+                    <li>Dog (Chica)</li>
+                    <img id="chica" src="Images/Chica.jpg" alt="Cute dog">
+                </ul>
+            </div>
+            <div class="familyyy">
+                <ul>
+                    <li>Sister</li>
+                    <img id="sister" src="Images/sister.jpg" alt="sister">
+                    <li>Friends (Pedro)</li>
+                    <img id="pedro" src="Images/pedro.jpg" alt="pedro">
+                </ul>
+            </div>
+        </div>
+        <h2>Education</h2>
+        <p>I'm currently pursuing a Bachelor's degree in ICT at HZ University. I believe this program will provide me
+            with the knowledge and skills I need to make a meaningful contribution to the tech industry.
+            However i already did a two-year course in managment and accounting.</p>
+        <h2>Jobs</h2>
+        <p>Before coming to the Netherlands i used to be a financial assistant in a company, i also have experience
+            with some car parts (steering box, transmissions, steering pumps...) i also had a office job in two other
+            different companies one related to beds and everything related to it and in a gas company.</p>
+        <fieldset>
+            <legend>Am i an outdoor or indoor person?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
         </fieldset>
         <fieldset>
-          <legend>Favorite season of the year</legend>
-          <label><input id="spring" type="radio" name="spring-summer-autumn-winter" value="spring" > Spring</label>
-          <label><input id="summer" type="radio" name="spring-summer-autumn-winter" value="summer" > Summer</label>
-          <label><input id="autumn" type="radio" name="spring-summer-autumn-winter" value="autumn" > Autumn</label>
-          <label><input id="winter" type="radio" name="spring-summer-autumn-winter" value="spring" > Winter</label>
+            <legend>Favorite season of the year</legend>
+            <label><input id="spring" type="radio" name="spring-summer-autumn-winter" value="spring"> Spring</label>
+            <label><input id="summer" type="radio" name="spring-summer-autumn-winter" value="summer"> Summer</label>
+            <label><input id="autumn" type="radio" name="spring-summer-autumn-winter" value="autumn"> Autumn</label>
+            <label><input id="winter" type="radio" name="spring-summer-autumn-winter" value="spring"> Winter</label>
         </fieldset>
-  </div>
+    </div>
 </body>
 <footer>
-    <div class="left"><a href="https://www.google.com/" ><img id="CNT" src="Images/gmail.jpg" alt="Gmail"> jojopereiradeodato@gmail.com </a>
+    <div class="left"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img id="CNT" src="images/gmail.jpg" alt="Gmail">
+            jojopereiradeodato@gmail.com </a>
         <br>
-        <a href="https://www.instagram.com/jojo_deodato/" ><img id="CNT" src="Images/instagram.jfif" alt="Instagram"> jojo_deodato </a>
+        <a href="https://www.instagram.com/jojo_deodato/"><img id="CNT" src="images/instagram.jfif" alt="Instagram">
+            jojo_deodato </a>
         <br>
-        <a href="https://www.linkedin.com/" ><img id="CNT" src="Images/linkedin.png" alt="Linkedin"> João Deodato</a>
+        <a href="https://www.linkedin.com/"><img id="CNT" src="images/linkedin.png" alt="Linkedin"> João Deodato</a>
         <br>
-        <img id="CNT" src="Images/phone.png" alt="Phone"> +351 926 114 159</a></div>
-    <div class="HZlinks"><p>
-        <a  target="_blank" href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070"> Course and Examination Regulations</a>
-        <br>
-        <a target="_blank" href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf"> Implementation Regulations</a>
-        <br>
-        <a target="_blank" href="https://learn.hz.nl/course/view.php?id=28881#section-0">Learn environment</a>
-        <br>
-        <a target="_blank" href="https://www.microsoft.com/nl-nl/microsoft-teams/log-in">Teams environment</a>
-        <br>
-        <a target="_blank" href="https://portal.hz.nl/en/">MyHZ</a>
-        <br>
-        <a target="_blank" href="https://github.com/HZ-HBO-ICT">Github environment</a>
-          </p>
-        </div>
+        <img id="CNT" src="images/phone.png" alt="Phone"> +351 926 114 159</a>
+    </div>
+    <div class="center">
+        <a target="_blank" href="https://hz.nl/en/" class="HZ1"><img src="Images/HZ.png" alt="HZ logo"></a>
+    </div>
+    <div class="right">
+        <p>
+            <a target="_blank" href="https://hz.nl/en/about-hz/organisation/regulations-and-documents#panel1945070">
+                Course and Examination Regulations</a>
+            <br>
+            <a target="_blank"
+                href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf">
+                Implementation Regulations</a>
+            <br>
+            <a target="_blank" href="https://learn.hz.nl/course/view.php?id=28881#section-0">Learn environment</a>
+            <br>
+            <a target="_blank" href="https://www.microsoft.com/nl-nl/microsoft-teams/log-in">Teams environment</a>
+            <br>
+            <a target="_blank" href="https://portal.hz.nl/en/">MyHZ</a>
+            <br>
+            <a target="_blank" href="https://github.com/HZ-HBO-ICT">Github environment</a>
+        </p>
 </footer>
+</body>
+
+</html>
